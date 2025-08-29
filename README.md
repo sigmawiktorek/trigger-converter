@@ -53,28 +53,6 @@ The converter intelligently handles:
 - **Mixed data types** (strings, numbers, booleans, tables)
 - **Special characters and escape sequences**
 
-## 🔧 Installation & Development
-
-### Quick Start:
-```bash
-# Clone the repository
-git clone https://github.com/sigmawiktorek/trigger-converter.git
-
-# Open in your browser
-open index.html
-```
-
-### File Structure:
-```
-trigger-converter/
-├── index.html          # Main HTML file
-├── style.css           # Styles and themes
-├── script.js           # JavaScript logic
-├── translations.json   # Language translations
-├── LICENSE             # Mit License file
-└── README.md           # This file
-```
-
 ## 📞 Support
 
 Having issues or questions?
