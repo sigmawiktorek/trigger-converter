@@ -6,10 +6,9 @@ A modern, lightweight web application that allows you to convert FiveM trigger f
 
 ## ✨ Features
 
-- **🔀 Bidirectional Conversion**: Convert from Keyser/Susano to Executor format and vice versa
+- **🔀 Bidirectional Conversion**: Convert from Event Executor to Lua Executor format and vice versa
 - **🌐 Multi-language Support**: Available in Polish (PL) and English (EN)
 - **🌙 Dark/Light Theme**: Toggle between dark and light modes for comfortable usage
-- **📱 Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 - **⚡ Real-time Processing**: Instant conversion with visual feedback
 - **📋 One-click Copy**: Copy results to clipboard with a single click
 - **🧹 Easy Clear**: Clear all inputs and outputs quickly
@@ -20,18 +19,6 @@ A modern, lightweight web application that allows you to convert FiveM trigger f
 **[Try it now!](https://sigmawiktorek.github.io/trigger-converter)**
 
 ## 📖 Usage
-
-### Input Formats Supported:
-
-**Event Executor Format:**
-```lua
-esx:test | [123, {'time': 60, 'reason': 'test'}]
-```
-
-**Lua Executor Format:**
-```python
-TriggerServerEvent("esx:test", 123, {time=60, reason="test"})
-```
 
 ### How to Use:
 
