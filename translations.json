@@ -44,7 +44,8 @@
         "statusInvalidPayload": "✘ Invalid event_name | [payload] format",
         "statusPayloadArray": "✘ Payload must be an array",
         "statusUnknownFormat": "✘ Unrecognized string format",
-        "instructions": "Paste <code>TriggerServerEvent(...)</code> or <code>event_name | [payload]</code> strings.<br>Examples:<br>- <code>TriggerServerEvent(\"esx:test\", 123, {time=60, reason=\"test\"})</code><br>- <code>esx:test | [123, {'time': 60, 'reason': 'test'}]</code><br><br><strong>Supported formats:</strong> multiline blocks, nested arrays, callback functions, comments",
+        "instructions": "Paste <code>TriggerServerEvent(...)</code> or <code>event_name | [payload]</code> strings.",
         "copied": "Copied!"
     }
+
 }
