@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="app-title">Konwerter Triggerów</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>
+            <span id="header-title">Konwerter Triggerów</span>
+        </h1>
+        <div class="header-controls">
+            <div id="lang-toggle-group" style="display: flex; gap: 0.5rem;">
+                <button id="lang-toggle-pl" class="lang-toggle active" data-lang="pl">PL</button>
+                <button id="lang-toggle-en" class="lang-toggle" data-lang="en">EN</button>
+            </div>
+            <button id="theme-toggle" class="theme-toggle">
+                <svg id="theme-icon" class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Sun icon -->
+                    <circle cx="12" cy="12" r="4" />
+                    <path d="M12 2v2" />
+                    <path d="M12 20v2" />
+                    <path d="m4.93 4.93 1.41 1.41" />
+                    <path d="m17.66 17.66 1.41 1.41" />
+                    <path d="M2 12h2" />
+                    <path d="M20 12h2" />
+                    <path d="m6.34 17.66-1.41 1.41" />
+                    <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div>
+        <label for="input-area" class="label" id="input-label">Wprowadź ciąg(i):</label>
+        <div class="textarea-container">
+            <textarea id="input-area" class="textarea" placeholder="Wklej TriggerServerEvent lub event_name | [payload] tutaj..."></textarea>
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <button id="process-btn" class="btn btn-primary">
+            <svg class="icon" viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+            </svg>
+            <span id="process-btn-text">Przetwórz</span>
+            <div id="process-spinner" class="spinner" style="display: none;"></div>
+        </button>
+        <button id="copy-btn" class="btn btn-secondary">
+            <svg class="icon" viewBox="0 0 24 24">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            <span id="copy-btn-text">Kopiuj</span>
+        </button>
+        <button id="clear-btn" class="btn btn-tertiary">
+            <svg class="icon" viewBox="0 0 24 24">
+                <polyline points="3 6 5 6 21 6"/>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+            </svg>
+            <span id="clear-btn-text">Wyczyść</span>
+        </button>
+    </div>
+
+    <div>
+        <label for="output-area" class="label" id="output-label">Wynik:</label>
+        <textarea id="output-area" class="output" readonly></textarea>
+    </div>
+    
+    <div id="status-message" class="status" style="display: none;"></div>
+
+    <div class="instructions" id="instructions">
+        Wklej ciągi <code>TriggerServerEvent(...)</code> lub <code>event_name | [payload]</code>.<br>
+        Przykłady:<br>
+        - <code>TriggerServerEvent("esx:test", 123, {time=60, reason="test"})</code><br>
+        - <code>esx:test | [123, {'time': 60, 'reason': 'test'}]</code><br><br>
+        <strong>Obsługiwane formaty:</strong> wieloliniowe bloki, zagnieżdżone tablice, funkcje callback, komentarze
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
