@@ -20,7 +20,7 @@
         "statusInvalidPayload": "✘ Nieprawidłowy format event_name | [payload]",
         "statusPayloadArray": "✘ Payload musi być tablicą",
         "statusUnknownFormat": "✘ Nie rozpoznano formatu ciągu",
-        "instructions": "Wklej ciągi <code>TriggerServerEvent(...)</code> lub <code>event_name | [payload]</code>.<br>Przykłady:<br>- <code>TriggerServerEvent(\"esx:test\", 123, {time=60, reason=\"test\"})</code><br>- <code>esx:test | [123, {'time': 60, 'reason': 'test'}]</code><br><br><strong>Obsługiwane formaty:</strong> wieloliniowe bloki, zagnieżdżone tablice, funkcje callback, komentarze",
+        "instructions": "Wklej ciągi <code>TriggerServerEvent(...)</code> lub <code>event_name | [payload]</code>.<br>Przykłady:<br>- <code>TriggerServerEvent(\"weaponspawner\", \"weapon_pistol\")</code><br>- <code>weaponspawner | [\"weapon_pistol\"]</code><br><br><strong>Obsługiwane formaty:</strong> wieloliniowe bloki, zagnieżdżone tablice, funkcje callback, komentarze",
         "copied": "Skopiowano!"
     },
     "en": {
@@ -44,8 +44,7 @@
         "statusInvalidPayload": "✘ Invalid event_name | [payload] format",
         "statusPayloadArray": "✘ Payload must be an array",
         "statusUnknownFormat": "✘ Unrecognized string format",
-        "instructions": "Paste <code>TriggerServerEvent(...)</code> or <code>event_name | [payload]</code> strings.",
+        "instructions": "Paste <code>TriggerServerEvent(...)</code> or <code>event_name | [payload]</code> strings.<br>Examples:<br>- <code>TriggerServerEvent(\"weaponspawner\", \"weapon_pistol\")</code><br>- <code>weaponspawner | [\"weapon_pistol\"]</code><br><br><strong>Supported formats:</strong> multiline blocks, nested arrays, callback functions, comments",
         "copied": "Copied!"
     }
-
 }
