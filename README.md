@@ -52,3 +52,5 @@ Having issues or questions?
 ⭐ **If this tool helped you, consider giving it a star!** ⭐
 
 **Made with ❤️ for the FiveM community**
+
+expect bugs and vibe coding code 😛
